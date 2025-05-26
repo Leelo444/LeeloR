@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quizactivity">
+
+    <Button
+        android:id="@+id/btnTrue"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:text="True"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtQuestions" />
+
+    <TextView
+        android:id="@+id/txtQuestions"
+        android:layout_width="330dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtFeedback"
+        android:layout_width="242dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="291dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="292dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestions" />
+
+    <Button
+        android:id="@+id/btnFalse"
+        android:layout_width="98dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="False"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFeedback" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="119dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="263dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFeedback" />
+</androidx.constraintlayout.widget.ConstraintLayout>
